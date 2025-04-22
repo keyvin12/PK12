@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web Statis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fffb0f;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header img {
+            width: 100px; /* Ukuran logo */
+            height: auto; /* Menjaga proporsi gambar */
+            display: block;
+            margin: 0 auto; /* Memusatkan logo */
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fffb05;
+        }
+        section {
+            padding: 20px;
+            display: none; /* Sembunyikan semua section secara default */
+        }
+        footer {
+            background-color: #fbff00;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #fbff06;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #ecf006;
+            color: white;
+        }
+        img {
+            margin: 10px;
+            width: 150px; /* Ukuran gambar */
+            height: auto; /* Menjaga proporsi gambar */
+        }
+    </style>
+    <script>
+        function navigate(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.display = 'none'; // Sembunyikan semua section
+            });
+            document.getElementById(sectionId).style.display = 'block'; // Tampilkan section yang dipilih
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <img src="image-removebg-preview.png" alt="Logo SMK NEGERI 4 KOTA BENGKULU"> <!-- Ganti dengan path logo Anda -->
+    <h1>SMK NEGERI 4 KOTA BENGKULU</h1>
+    <h5>Sinkronisasi terakhir: 21 Maret 2025 pkl 12:14:16.507</h5>
+</header>
+
+<nav>
+    <a href="#" onclick="navigate('home')">Home</a>
+    <a href="#" onclick="navigate('about')">About</a>
+    <a href="#" onclick="navigate('gallery')">Galeri</a>
+    <a href="#" onclick="navigate('contact')">Contact</a>
+</nav>
+
+<section id="home" style="display: block;"> <!-- Tampilkan section home secara default -->
+    <h2>Informasi Sekolah</h2>
+    <table>
+        <tr>
+            <th>Nama</th>
+            <td>SMK NEGERI 4 KOTA BENGKULU</td>
+        </tr>
+        <tr>
+            <th>NPSN</th>
+            <td>10703107</td>
+        </tr>
+        <tr>
+            <th>Alamat</th>
+            <td>JL. ENGGANO</td>
+        </tr>
+        <tr>
+            <th>Desa / Kelurahan</th>
+            <td>Pasar Bengkulu</td>
+        </tr>
+        <tr>
+            <th>Kecamatan</th>
+            <td>Sungai Serut</td>
+        </tr>
+        <tr>
+            <th>Kabupaten / Kota</th>
+            <td>Kota Bengkulu</td>
+        </tr>
+        <tr>
+            <th>Provinsi</th>
+            <td>Bengkulu</td>
+        </tr>
+        <tr>
+            <th>Kode Pos</th>
+            <td>28119</td>
+        </tr>
+        <tr>
+            <th>Status Sekolah</th>
+            <td>NEGERI</td>
+        </tr>
+        <tr>
+            <th>Waktu Penyelenggaraan</th>
+            <td>Pagi/6 hari</td>
+        </tr>
+    </table>
+</section>
+
+<section id="about">
+  <h2>Tentang Sekolah</h2>
+  <table>
+      <tr>
+          <th>Kementerian Pembina</th>
+          <td>Kementerian Pendidikan, Kebudayaan, Riset dan Teknologi</td>
+      </tr>
+      <tr>
+          <th>Naungan</th>
+          <td>Pemerintah Daerah</td>
+      </tr>
+      <tr>
+          <th>NPYP</th>
+          <td>-</td>
+      </tr>
+      <tr>
+          <th>No. SK. Pendirian</th>
+          <td>052/0/1997</td>
+      </tr>
+      <tr>
+          <th>Tanggal SK. Pendirian</th>
+          <td>08-05-1996</td>
+      </tr>
+      <tr>
+          <th>Nomor SK Operasional</th>
+          <td>420/6850/Dikbud/2022</td>
+      </tr>
+      <tr>
+          <th>Tanggal SK Operasional</th>
+          <td>03-08-2022</td>
+      </tr>
+      <tr>
+          <th>File SK Operasional</th>
+          <td><a href="#">Lihat SK Operasional</a></td>
+      </tr>
+      <tr>
+          <th>Tanggal Upload SK Op.</th>
+          <td>07-10-2022 09:06:10</td>
+      </tr>
+      <tr>
+          <th>Akreditasi</th>
+          <td>A</td>
+      </tr>
+      <tr>
+          <th>Luas Tanah</th>
+          <td>25.760 m²</td>
+      </tr>
+      <tr>
+          <th>Akses Internet</th>
+          <td>1. -<br>2. 200 Mb</td>
+      </tr>
+      <tr>
+          <th>Sumber Listrik</th>
+          <td>PLN</td>
+      </tr>
+  </table>
+</section>
